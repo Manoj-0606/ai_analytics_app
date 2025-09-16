@@ -1,0 +1,10 @@
+month,service,cost
+2025-01,Compute Engine,1200
+2025-01,Cloud Storage,300
+2025-01,BigQuery,500
+2025-02,Compute Engine,1500
+2025-02,Cloud Storage,250
+2025-02,BigQuery,700
+2025-03,Compute Engine,1800
+2025-03,Cloud Storage,200
+2025-03,BigQuery,900

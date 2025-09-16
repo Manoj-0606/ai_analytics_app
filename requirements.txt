@@ -1,0 +1,13 @@
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+fastapi
+uvicorn[standard]
+openai
+transformers
+sqlalchemy
+jupyter
+streamlit
+requests

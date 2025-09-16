@@ -1,0 +1,1902 @@
+{
+  "per_k": {
+    "1": {
+      "recall": 0.9166666666666666,
+      "n_queries": 12,
+      "n_found": 11,
+      "details": [
+        {
+          "id": 1,
+          "q": "What was total spend in 2025-02? Break it down by service.",
+          "result": {
+            "question": "What was total spend in 2025-02? Break it down by service.",
+            "expected": [
+              "2025-02",
+              "Compute Engine",
+              "BigQuery"
+            ],
+            "matched_terms": [
+              "2025-02",
+              "BigQuery"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-02",
+                "service": "BigQuery",
+                "cost": 700.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.43456774950027466
+              }
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "q": "Top service in Feb 2025?",
+          "result": {
+            "question": "Top service in Feb 2025?",
+            "expected": [
+              "BigQuery",
+              "Compute Engine"
+            ],
+            "matched_terms": [
+              "BigQuery"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-02",
+                "service": "BigQuery",
+                "cost": 700.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.3384917378425598
+              }
+            ]
+          }
+        },
+        {
+          "id": 3,
+          "q": "Which month had the highest compute engine cost?",
+          "result": {
+            "question": "Which month had the highest compute engine cost?",
+            "expected": [
+              "2025-03",
+              "Compute Engine"
+            ],
+            "matched_terms": [
+              "2025-03",
+              "Compute Engine"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-03",
+                "service": "Compute Engine",
+                "cost": 1800.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.5646969079971313
+              }
+            ]
+          }
+        },
+        {
+          "id": 4,
+          "q": "List items with missing owner tag.",
+          "result": {
+            "question": "List items with missing owner tag.",
+            "expected": [
+              "tags",
+              "missing",
+              "None"
+            ],
+            "matched_terms": [
+              "None"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-01",
+                "service": "BigQuery",
+                "cost": 500.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.28255778551101685
+              }
+            ]
+          }
+        },
+        {
+          "id": 5,
+          "q": "Explain sudden jump in cost in March 2025.",
+          "result": {
+            "question": "Explain sudden jump in cost in March 2025.",
+            "expected": [
+              "2025-03",
+              "Compute Engine",
+              "900",
+              "1800"
+            ],
+            "matched_terms": [
+              "2025-03",
+              "900"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-03",
+                "service": "BigQuery",
+                "cost": 900.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.40385615825653076
+              }
+            ]
+          }
+        },
+        {
+          "id": 6,
+          "q": "Which resources look idle?",
+          "result": {
+            "question": "Which resources look idle?",
+            "expected": [
+              "zero cost",
+              "0",
+              "idle"
+            ],
+            "matched_terms": [
+              "0"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-02",
+                "service": "Compute Engine",
+                "cost": 1500.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4246811866760254
+              }
+            ]
+          }
+        },
+        {
+          "id": 7,
+          "q": "Show Cloud Storage spend by month.",
+          "result": {
+            "question": "Show Cloud Storage spend by month.",
+            "expected": [
+              "Cloud Storage",
+              "2025-01",
+              "2025-02",
+              "2025-03"
+            ],
+            "matched_terms": [
+              "Cloud Storage",
+              "2025-01"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-01",
+                "service": "Cloud Storage",
+                "cost": 300.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.5516614317893982
+              }
+            ]
+          }
+        },
+        {
+          "id": 8,
+          "q": "Which service costs 500 in Jan 2025?",
+          "result": {
+            "question": "Which service costs 500 in Jan 2025?",
+            "expected": [
+              "500",
+              "BigQuery",
+              "2025-01"
+            ],
+            "matched_terms": [
+              "500",
+              "BigQuery",
+              "2025-01"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-01",
+                "service": "BigQuery",
+                "cost": 500.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.47848400473594666
+              }
+            ]
+          }
+        },
+        {
+          "id": 9,
+          "q": "What was BigQuery cost trend?",
+          "result": {
+            "question": "What was BigQuery cost trend?",
+            "expected": [
+              "BigQuery",
+              "500",
+              "700",
+              "900"
+            ],
+            "matched_terms": [
+              "BigQuery",
+              "700"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-02",
+                "service": "BigQuery",
+                "cost": 700.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.651302695274353
+              }
+            ]
+          }
+        },
+        {
+          "id": 10,
+          "q": "Which service had cost 1200 in Jan 2025?",
+          "result": {
+            "question": "Which service had cost 1200 in Jan 2025?",
+            "expected": [
+              "1200",
+              "Compute Engine",
+              "2025-01"
+            ],
+            "matched_terms": [
+              "1200",
+              "Compute Engine",
+              "2025-01"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-01",
+                "service": "Compute Engine",
+                "cost": 1200.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.5124508142471313
+              }
+            ]
+          }
+        },
+        {
+          "id": 11,
+          "q": "Any rows missing tags?",
+          "result": {
+            "question": "Any rows missing tags?",
+            "expected": [
+              "tags",
+              "missing"
+            ],
+            "matched_terms": [],
+            "found_any": false,
+            "retrieved": [
+              {
+                "month": "2025-01",
+                "service": "BigQuery",
+                "cost": 500.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.34633952379226685
+              }
+            ]
+          }
+        },
+        {
+          "id": 12,
+          "q": "Top 3 cost drivers in 2025-03",
+          "result": {
+            "question": "Top 3 cost drivers in 2025-03",
+            "expected": [
+              "2025-03",
+              "Compute Engine",
+              "BigQuery",
+              "Cloud Storage"
+            ],
+            "matched_terms": [
+              "2025-03",
+              "BigQuery"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-03",
+                "service": "BigQuery",
+                "cost": 900.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4781796336174011
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "3": {
+      "recall": 0.9166666666666666,
+      "n_queries": 12,
+      "n_found": 11,
+      "details": [
+        {
+          "id": 1,
+          "q": "What was total spend in 2025-02? Break it down by service.",
+          "result": {
+            "question": "What was total spend in 2025-02? Break it down by service.",
+            "expected": [
+              "2025-02",
+              "Compute Engine",
+              "BigQuery"
+            ],
+            "matched_terms": [
+              "2025-02",
+              "BigQuery"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-02",
+                "service": "BigQuery",
+                "cost": 700.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.43456774950027466
+              },
+              {
+                "month": "2025-01",
+                "service": "BigQuery",
+                "cost": 500.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4244730472564697
+              },
+              {
+                "month": "2025-03",
+                "service": "BigQuery",
+                "cost": 900.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.42264068126678467
+              }
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "q": "Top service in Feb 2025?",
+          "result": {
+            "question": "Top service in Feb 2025?",
+            "expected": [
+              "BigQuery",
+              "Compute Engine"
+            ],
+            "matched_terms": [
+              "BigQuery"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-02",
+                "service": "BigQuery",
+                "cost": 700.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.33845049142837524
+              },
+              {
+                "month": "2025-03",
+                "service": "BigQuery",
+                "cost": 900.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.32367560267448425
+              },
+              {
+                "month": "2025-02",
+                "service": "Cloud Storage",
+                "cost": 250.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.32317131757736206
+              }
+            ]
+          }
+        },
+        {
+          "id": 3,
+          "q": "Which month had the highest compute engine cost?",
+          "result": {
+            "question": "Which month had the highest compute engine cost?",
+            "expected": [
+              "2025-03",
+              "Compute Engine"
+            ],
+            "matched_terms": [
+              "2025-03",
+              "Compute Engine"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-03",
+                "service": "Compute Engine",
+                "cost": 1800.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.5646969079971313
+              },
+              {
+                "month": "2025-02",
+                "service": "Compute Engine",
+                "cost": 1500.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.5598421096801758
+              },
+              {
+                "month": "2025-01",
+                "service": "Compute Engine",
+                "cost": 1200.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.5565460920333862
+              }
+            ]
+          }
+        },
+        {
+          "id": 4,
+          "q": "List items with missing owner tag.",
+          "result": {
+            "question": "List items with missing owner tag.",
+            "expected": [
+              "tags",
+              "missing",
+              "None"
+            ],
+            "matched_terms": [
+              "None"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-01",
+                "service": "BigQuery",
+                "cost": 500.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.28255778551101685
+              },
+              {
+                "month": "2025-03",
+                "service": "BigQuery",
+                "cost": 900.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.28252437710762024
+              },
+              {
+                "month": "2025-02",
+                "service": "BigQuery",
+                "cost": 700.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.27603843808174133
+              }
+            ]
+          }
+        },
+        {
+          "id": 5,
+          "q": "Explain sudden jump in cost in March 2025.",
+          "result": {
+            "question": "Explain sudden jump in cost in March 2025.",
+            "expected": [
+              "2025-03",
+              "Compute Engine",
+              "900",
+              "1800"
+            ],
+            "matched_terms": [
+              "2025-03",
+              "900"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-03",
+                "service": "BigQuery",
+                "cost": 900.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.40380704402923584
+              },
+              {
+                "month": "2025-02",
+                "service": "BigQuery",
+                "cost": 700.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.38740915060043335
+              },
+              {
+                "month": "2025-03",
+                "service": "Cloud Storage",
+                "cost": 200.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.3866536319255829
+              }
+            ]
+          }
+        },
+        {
+          "id": 6,
+          "q": "Which resources look idle?",
+          "result": {
+            "question": "Which resources look idle?",
+            "expected": [
+              "zero cost",
+              "0",
+              "idle"
+            ],
+            "matched_terms": [
+              "0"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-02",
+                "service": "Compute Engine",
+                "cost": 1500.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4246811866760254
+              },
+              {
+                "month": "2025-01",
+                "service": "Compute Engine",
+                "cost": 1200.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4234342575073242
+              },
+              {
+                "month": "2025-03",
+                "service": "Compute Engine",
+                "cost": 1800.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4211476743221283
+              }
+            ]
+          }
+        },
+        {
+          "id": 7,
+          "q": "Show Cloud Storage spend by month.",
+          "result": {
+            "question": "Show Cloud Storage spend by month.",
+            "expected": [
+              "Cloud Storage",
+              "2025-01",
+              "2025-02",
+              "2025-03"
+            ],
+            "matched_terms": [
+              "Cloud Storage",
+              "2025-01",
+              "2025-02",
+              "2025-03"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-01",
+                "service": "Cloud Storage",
+                "cost": 300.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.5516614317893982
+              },
+              {
+                "month": "2025-03",
+                "service": "Cloud Storage",
+                "cost": 200.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.5383273363113403
+              },
+              {
+                "month": "2025-02",
+                "service": "Cloud Storage",
+                "cost": 250.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.5313509106636047
+              }
+            ]
+          }
+        },
+        {
+          "id": 8,
+          "q": "Which service costs 500 in Jan 2025?",
+          "result": {
+            "question": "Which service costs 500 in Jan 2025?",
+            "expected": [
+              "500",
+              "BigQuery",
+              "2025-01"
+            ],
+            "matched_terms": [
+              "500",
+              "BigQuery",
+              "2025-01"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-01",
+                "service": "BigQuery",
+                "cost": 500.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.47848400473594666
+              },
+              {
+                "month": "2025-02",
+                "service": "Compute Engine",
+                "cost": 1500.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.46931374073028564
+              },
+              {
+                "month": "2025-02",
+                "service": "Cloud Storage",
+                "cost": 250.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4685857892036438
+              }
+            ]
+          }
+        },
+        {
+          "id": 9,
+          "q": "What was BigQuery cost trend?",
+          "result": {
+            "question": "What was BigQuery cost trend?",
+            "expected": [
+              "BigQuery",
+              "500",
+              "700",
+              "900"
+            ],
+            "matched_terms": [
+              "BigQuery",
+              "500",
+              "700",
+              "900"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-02",
+                "service": "BigQuery",
+                "cost": 700.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.651302695274353
+              },
+              {
+                "month": "2025-03",
+                "service": "BigQuery",
+                "cost": 900.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.6474932432174683
+              },
+              {
+                "month": "2025-01",
+                "service": "BigQuery",
+                "cost": 500.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.6431637406349182
+              }
+            ]
+          }
+        },
+        {
+          "id": 10,
+          "q": "Which service had cost 1200 in Jan 2025?",
+          "result": {
+            "question": "Which service had cost 1200 in Jan 2025?",
+            "expected": [
+              "1200",
+              "Compute Engine",
+              "2025-01"
+            ],
+            "matched_terms": [
+              "1200",
+              "Compute Engine",
+              "2025-01"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-01",
+                "service": "Compute Engine",
+                "cost": 1200.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.5124508142471313
+              },
+              {
+                "month": "2025-01",
+                "service": "Cloud Storage",
+                "cost": 300.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4886389374732971
+              },
+              {
+                "month": "2025-02",
+                "service": "Compute Engine",
+                "cost": 1500.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4882245659828186
+              }
+            ]
+          }
+        },
+        {
+          "id": 11,
+          "q": "Any rows missing tags?",
+          "result": {
+            "question": "Any rows missing tags?",
+            "expected": [
+              "tags",
+              "missing"
+            ],
+            "matched_terms": [],
+            "found_any": false,
+            "retrieved": [
+              {
+                "month": "2025-01",
+                "service": "BigQuery",
+                "cost": 500.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.34633952379226685
+              },
+              {
+                "month": "2025-02",
+                "service": "BigQuery",
+                "cost": 700.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.3455296754837036
+              },
+              {
+                "month": "2025-03",
+                "service": "BigQuery",
+                "cost": 900.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.3429005444049835
+              }
+            ]
+          }
+        },
+        {
+          "id": 12,
+          "q": "Top 3 cost drivers in 2025-03",
+          "result": {
+            "question": "Top 3 cost drivers in 2025-03",
+            "expected": [
+              "2025-03",
+              "Compute Engine",
+              "BigQuery",
+              "Cloud Storage"
+            ],
+            "matched_terms": [
+              "2025-03",
+              "BigQuery",
+              "Cloud Storage"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-03",
+                "service": "BigQuery",
+                "cost": 900.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4783158302307129
+              },
+              {
+                "month": "2025-02",
+                "service": "BigQuery",
+                "cost": 700.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.45627328753471375
+              },
+              {
+                "month": "2025-01",
+                "service": "Cloud Storage",
+                "cost": 300.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4558084011077881
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "5": {
+      "recall": 0.9166666666666666,
+      "n_queries": 12,
+      "n_found": 11,
+      "details": [
+        {
+          "id": 1,
+          "q": "What was total spend in 2025-02? Break it down by service.",
+          "result": {
+            "question": "What was total spend in 2025-02? Break it down by service.",
+            "expected": [
+              "2025-02",
+              "Compute Engine",
+              "BigQuery"
+            ],
+            "matched_terms": [
+              "2025-02",
+              "BigQuery"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-02",
+                "service": "BigQuery",
+                "cost": 700.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.43456774950027466
+              },
+              {
+                "month": "2025-01",
+                "service": "BigQuery",
+                "cost": 500.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4244730472564697
+              },
+              {
+                "month": "2025-03",
+                "service": "BigQuery",
+                "cost": 900.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.42264068126678467
+              },
+              {
+                "month": "2025-02",
+                "service": "Cloud Storage",
+                "cost": 250.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4150800406932831
+              },
+              {
+                "month": "2025-03",
+                "service": "Cloud Storage",
+                "cost": 200.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4053666293621063
+              }
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "q": "Top service in Feb 2025?",
+          "result": {
+            "question": "Top service in Feb 2025?",
+            "expected": [
+              "BigQuery",
+              "Compute Engine"
+            ],
+            "matched_terms": [
+              "BigQuery"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-02",
+                "service": "BigQuery",
+                "cost": 700.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.33845049142837524
+              },
+              {
+                "month": "2025-03",
+                "service": "BigQuery",
+                "cost": 900.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.32367560267448425
+              },
+              {
+                "month": "2025-02",
+                "service": "Cloud Storage",
+                "cost": 250.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.32317131757736206
+              },
+              {
+                "month": "2025-01",
+                "service": "BigQuery",
+                "cost": 500.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.32206857204437256
+              },
+              {
+                "month": "2025-01",
+                "service": "Cloud Storage",
+                "cost": 300.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.29266300797462463
+              }
+            ]
+          }
+        },
+        {
+          "id": 3,
+          "q": "Which month had the highest compute engine cost?",
+          "result": {
+            "question": "Which month had the highest compute engine cost?",
+            "expected": [
+              "2025-03",
+              "Compute Engine"
+            ],
+            "matched_terms": [
+              "2025-03",
+              "Compute Engine"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-03",
+                "service": "Compute Engine",
+                "cost": 1800.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.5645571351051331
+              },
+              {
+                "month": "2025-02",
+                "service": "Compute Engine",
+                "cost": 1500.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.5597119927406311
+              },
+              {
+                "month": "2025-01",
+                "service": "Compute Engine",
+                "cost": 1200.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.556404173374176
+              },
+              {
+                "month": "2025-03",
+                "service": "BigQuery",
+                "cost": 900.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.42361241579055786
+              },
+              {
+                "month": "2025-02",
+                "service": "BigQuery",
+                "cost": 700.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4227229654788971
+              }
+            ]
+          }
+        },
+        {
+          "id": 4,
+          "q": "List items with missing owner tag.",
+          "result": {
+            "question": "List items with missing owner tag.",
+            "expected": [
+              "tags",
+              "missing",
+              "None"
+            ],
+            "matched_terms": [
+              "None"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-01",
+                "service": "BigQuery",
+                "cost": 500.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.28255778551101685
+              },
+              {
+                "month": "2025-03",
+                "service": "BigQuery",
+                "cost": 900.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.28252437710762024
+              },
+              {
+                "month": "2025-02",
+                "service": "BigQuery",
+                "cost": 700.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.27603843808174133
+              },
+              {
+                "month": "2025-01",
+                "service": "Cloud Storage",
+                "cost": 300.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.24576082825660706
+              },
+              {
+                "month": "2025-03",
+                "service": "Cloud Storage",
+                "cost": 200.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.2377515435218811
+              }
+            ]
+          }
+        },
+        {
+          "id": 5,
+          "q": "Explain sudden jump in cost in March 2025.",
+          "result": {
+            "question": "Explain sudden jump in cost in March 2025.",
+            "expected": [
+              "2025-03",
+              "Compute Engine",
+              "900",
+              "1800"
+            ],
+            "matched_terms": [
+              "2025-03",
+              "Compute Engine",
+              "900",
+              "1800"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-03",
+                "service": "BigQuery",
+                "cost": 900.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.40385615825653076
+              },
+              {
+                "month": "2025-02",
+                "service": "BigQuery",
+                "cost": 700.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.38743531703948975
+              },
+              {
+                "month": "2025-03",
+                "service": "Cloud Storage",
+                "cost": 200.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.38668566942214966
+              },
+              {
+                "month": "2025-03",
+                "service": "Compute Engine",
+                "cost": 1800.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.3850998282432556
+              },
+              {
+                "month": "2025-02",
+                "service": "Cloud Storage",
+                "cost": 250.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.3814883828163147
+              }
+            ]
+          }
+        },
+        {
+          "id": 6,
+          "q": "Which resources look idle?",
+          "result": {
+            "question": "Which resources look idle?",
+            "expected": [
+              "zero cost",
+              "0",
+              "idle"
+            ],
+            "matched_terms": [
+              "0"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-02",
+                "service": "Compute Engine",
+                "cost": 1500.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4246811866760254
+              },
+              {
+                "month": "2025-01",
+                "service": "Compute Engine",
+                "cost": 1200.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4234342575073242
+              },
+              {
+                "month": "2025-03",
+                "service": "Compute Engine",
+                "cost": 1800.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4211476743221283
+              },
+              {
+                "month": "2025-03",
+                "service": "BigQuery",
+                "cost": 900.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.36947816610336304
+              },
+              {
+                "month": "2025-02",
+                "service": "BigQuery",
+                "cost": 700.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.3635593354701996
+              }
+            ]
+          }
+        },
+        {
+          "id": 7,
+          "q": "Show Cloud Storage spend by month.",
+          "result": {
+            "question": "Show Cloud Storage spend by month.",
+            "expected": [
+              "Cloud Storage",
+              "2025-01",
+              "2025-02",
+              "2025-03"
+            ],
+            "matched_terms": [
+              "Cloud Storage",
+              "2025-01",
+              "2025-02",
+              "2025-03"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-01",
+                "service": "Cloud Storage",
+                "cost": 300.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.5516570806503296
+              },
+              {
+                "month": "2025-03",
+                "service": "Cloud Storage",
+                "cost": 200.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.5383334159851074
+              },
+              {
+                "month": "2025-02",
+                "service": "Cloud Storage",
+                "cost": 250.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.5313578844070435
+              },
+              {
+                "month": "2025-01",
+                "service": "Compute Engine",
+                "cost": 1200.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.38470759987831116
+              },
+              {
+                "month": "2025-02",
+                "service": "BigQuery",
+                "cost": 700.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.3737223446369171
+              }
+            ]
+          }
+        },
+        {
+          "id": 8,
+          "q": "Which service costs 500 in Jan 2025?",
+          "result": {
+            "question": "Which service costs 500 in Jan 2025?",
+            "expected": [
+              "500",
+              "BigQuery",
+              "2025-01"
+            ],
+            "matched_terms": [
+              "500",
+              "BigQuery",
+              "2025-01"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-01",
+                "service": "BigQuery",
+                "cost": 500.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.47848400473594666
+              },
+              {
+                "month": "2025-02",
+                "service": "Compute Engine",
+                "cost": 1500.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.46931374073028564
+              },
+              {
+                "month": "2025-02",
+                "service": "Cloud Storage",
+                "cost": 250.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4685857892036438
+              },
+              {
+                "month": "2025-01",
+                "service": "Cloud Storage",
+                "cost": 300.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4659169018268585
+              },
+              {
+                "month": "2025-01",
+                "service": "Compute Engine",
+                "cost": 1200.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4528319239616394
+              }
+            ]
+          }
+        },
+        {
+          "id": 9,
+          "q": "What was BigQuery cost trend?",
+          "result": {
+            "question": "What was BigQuery cost trend?",
+            "expected": [
+              "BigQuery",
+              "500",
+              "700",
+              "900"
+            ],
+            "matched_terms": [
+              "BigQuery",
+              "500",
+              "700",
+              "900"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-02",
+                "service": "BigQuery",
+                "cost": 700.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.651302695274353
+              },
+              {
+                "month": "2025-03",
+                "service": "BigQuery",
+                "cost": 900.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.6474932432174683
+              },
+              {
+                "month": "2025-01",
+                "service": "BigQuery",
+                "cost": 500.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.6431637406349182
+              },
+              {
+                "month": "2025-03",
+                "service": "Compute Engine",
+                "cost": 1800.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.44853919744491577
+              },
+              {
+                "month": "2025-02",
+                "service": "Compute Engine",
+                "cost": 1500.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4396890103816986
+              }
+            ]
+          }
+        },
+        {
+          "id": 10,
+          "q": "Which service had cost 1200 in Jan 2025?",
+          "result": {
+            "question": "Which service had cost 1200 in Jan 2025?",
+            "expected": [
+              "1200",
+              "Compute Engine",
+              "2025-01"
+            ],
+            "matched_terms": [
+              "1200",
+              "Compute Engine",
+              "2025-01"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-01",
+                "service": "Compute Engine",
+                "cost": 1200.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.5124508142471313
+              },
+              {
+                "month": "2025-01",
+                "service": "Cloud Storage",
+                "cost": 300.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4886389374732971
+              },
+              {
+                "month": "2025-02",
+                "service": "Compute Engine",
+                "cost": 1500.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4882245659828186
+              },
+              {
+                "month": "2025-02",
+                "service": "Cloud Storage",
+                "cost": 250.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4840082824230194
+              },
+              {
+                "month": "2025-03",
+                "service": "Compute Engine",
+                "cost": 1800.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.48288294672966003
+              }
+            ]
+          }
+        },
+        {
+          "id": 11,
+          "q": "Any rows missing tags?",
+          "result": {
+            "question": "Any rows missing tags?",
+            "expected": [
+              "tags",
+              "missing"
+            ],
+            "matched_terms": [],
+            "found_any": false,
+            "retrieved": [
+              {
+                "month": "2025-01",
+                "service": "BigQuery",
+                "cost": 500.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.34633952379226685
+              },
+              {
+                "month": "2025-02",
+                "service": "BigQuery",
+                "cost": 700.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.3455296754837036
+              },
+              {
+                "month": "2025-03",
+                "service": "BigQuery",
+                "cost": 900.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.3429005444049835
+              },
+              {
+                "month": "2025-01",
+                "service": "Compute Engine",
+                "cost": 1200.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.27454710006713867
+              },
+              {
+                "month": "2025-02",
+                "service": "Compute Engine",
+                "cost": 1500.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.2570965886116028
+              }
+            ]
+          }
+        },
+        {
+          "id": 12,
+          "q": "Top 3 cost drivers in 2025-03",
+          "result": {
+            "question": "Top 3 cost drivers in 2025-03",
+            "expected": [
+              "2025-03",
+              "Compute Engine",
+              "BigQuery",
+              "Cloud Storage"
+            ],
+            "matched_terms": [
+              "2025-03",
+              "Compute Engine",
+              "BigQuery",
+              "Cloud Storage"
+            ],
+            "found_any": true,
+            "retrieved": [
+              {
+                "month": "2025-03",
+                "service": "BigQuery",
+                "cost": 900.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4781838059425354
+              },
+              {
+                "month": "2025-02",
+                "service": "BigQuery",
+                "cost": 700.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.45617151260375977
+              },
+              {
+                "month": "2025-01",
+                "service": "Cloud Storage",
+                "cost": 300.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.45559507608413696
+              },
+              {
+                "month": "2025-03",
+                "service": "Compute Engine",
+                "cost": 1800.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.4554678797721863
+              },
+              {
+                "month": "2025-01",
+                "service": "BigQuery",
+                "cost": 500.0,
+                "account_id": null,
+                "subscription": null,
+                "resource_id": null,
+                "region": null,
+                "tags": null,
+                "_score": 0.45095038414001465
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "summary": {}
+}
