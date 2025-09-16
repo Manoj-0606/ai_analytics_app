@@ -47,3 +47,20 @@ Requires Python 3.11+
 API key configured via .env (see .env.example)
 Structured logs with latency included in every response
 Basic prompt-injection guard implemented for LLM input
+
+## Architecture & Design Decisions
+- Modular structure:  
+  - `services.py`: ETL, quality checks, KPI calculation  
+  - `retriever.py`: embeddings + vector search  
+  - `nlp.py`: LLM calls with prompt-injection guard  
+  - `routes.py`: FastAPI endpoints  
+  - `dashboard.py`: Streamlit UI  
+- FastAPI for backend APIs, Streamlit for quick dashboard visualization.  
+- Lightweight vector search with NumPy/FAISS for reproducibility.  
+- Dockerized setup for easy deployment (API + Dashboard).  
+
+## Future Work
+- Connect to real data warehouse (Postgres/BigQuery) for larger datasets.  
+- Add ML-based anomaly detection (beyond heuristics).  
+- Role-based authentication & stronger prompt-injection filters.  
+- CI/CD pipeline for automated testing and monitoring.  
