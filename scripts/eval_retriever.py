@@ -1,29 +1,18 @@
 # scripts/eval_retriever.py
-"""
-Simple RAG retrieval evaluation: Recall@k for a small testset.
-Saves results to data/eval_results.json
-Run: python scripts/eval_retriever.py
-"""
 import json
 import os
 from typing import List, Dict
-
-# Make sure project root is on path when running
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from app.retriever import query_index, _ensure_index_loaded
-from app.retriever import INDEX_META_PATH  # for debugging / meta access
 
-# Ensure index loaded (will raise if index missing)
 _try = True
 try:
     _ensure_index_loaded()
 except Exception as e:
     print("Warning: ensure_index_loaded raised:", e)
-    # proceed; query_index will raise if needed
 
-# Tiny Q/A testset (question -> expected terms that should appear in at least one retrieved row)
 QA_PAIRS: List[Dict] = [
     {"id": 1, "q": "What was total spend in 2025-02? Break it down by service.", "expected": ["2025-02", "Compute Engine", "BigQuery"]},
     {"id": 2, "q": "Top service in Feb 2025?", "expected": ["BigQuery", "Compute Engine"]},
@@ -42,9 +31,6 @@ QA_PAIRS: List[Dict] = [
 K_LIST = [1, 3, 5]
 
 def term_in_row(term: str, row: Dict) -> bool:
-    """
-    Simple, case-insensitive check whether `term` appears in any string value of row.
-    """
     if term is None or term == "":
         return False
     term_l = str(term).lower()
@@ -57,10 +43,6 @@ def term_in_row(term: str, row: Dict) -> bool:
     return False
 
 def evaluate_one(question: str, expected_terms: List[str], top_k: int) -> Dict:
-    """
-    Query index and check if any expected term present in returned rows.
-    Returns dict with results and retrieved rows.
-    """
     try:
         rows = query_index(question, top_k=top_k)
     except Exception as e:
@@ -97,7 +79,6 @@ def main():
         results["per_k"][str(k)] = {"recall": recall, "n_queries": len(QA_PAIRS), "n_found": n_found, "details": per_q}
         print(f"Recall@{k}: {n_found}/{len(QA_PAIRS)} = {recall:.2f}")
 
-    # Save results
     os.makedirs("data", exist_ok=True)
     out_path = "data/eval_results.json"
     with open(out_path, "w", encoding="utf-8") as f:

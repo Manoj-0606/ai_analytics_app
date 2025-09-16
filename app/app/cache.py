@@ -11,7 +11,6 @@ class SimpleTTLCache:
     def _prune(self):
         if len(self.store) <= self.maxsize:
             return
-        # remove oldest entries
         items = sorted(self.store.items(), key=lambda kv: kv[1][1])
         for k, _ in items[: len(self.store) - self.maxsize]:
             del self.store[k]
